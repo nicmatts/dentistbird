@@ -1,4 +1,6 @@
+$('.collapse').collapse();
+
 $(document).ready(function($) {
-  console.log("working");
+
 
 });

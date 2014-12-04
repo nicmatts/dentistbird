@@ -1,0 +1,29 @@
+
+.large-bird {
+  max-width: 80%;
+}
+
+footer {
+  margin-top: 45px;
+  border-top: 1px solid #ccc;
+  padding-top: 5px;
+  padding-right: 35px;
+  color: #555;
+  background: #eee;
+}
+footer a {
+  color: #333;
+}
+
+footer a:hover {
+  color: #111;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
