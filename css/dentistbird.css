@@ -1,7 +1,117 @@
-
-.large-bird {
-  max-width: 80%;
+body{
+  font-family: 'Gafata', sans-serif;
+  font-size: 20px;
 }
+
+.navbar {
+  min-height: 120px;
+}
+
+.navbar-default {
+  background-color: white;
+  border: none;
+  color: rgb(8, 81, 11);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: rgb(8, 81, 11);
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FFE98C;
+  background: rgb(8, 81, 11);
+  background: rgba(8, 81, 11, 0.8);
+}
+
+h3 {
+  font-size: 32px;
+  border-bottom: 1px solid #333;
+  max-width: 357px;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+
+iframe {
+  margin: 0 auto;
+}
+
+.youtube {
+  height: 100%;
+}
+
+.row.youtube {
+  margin-bottom: 0;
+}
+
+.row.app-store-button-container {
+  margin: 0;
+}
+
+.col-md-4.app-store-button-container{
+  padding-left: 0;
+}
+
+
+.app-store-button {
+  width: 150px;
+  border-radius: 7px;
+}
+
+/*add media query*/
+.jumbo {
+  color: #ffe;
+  margin: 29px 0 0 20px;
+  padding: 18px 0;
+  /*background: #91a678;*/
+}
+
+.container .jumbo {
+  border-radius: 0;
+  padding: 0 35px;
+}
+
+.jumbo h2 {
+  color: #FFE98C;
+  font-size: 1.7em;
+}
+
+.read {
+  margin-top: 38px;
+}
+
+.jumbo a {
+  color: #ffe;
+  text-decoration: underline;
+}
+
+.jumbo a:hover {
+  color: #FFE98C;
+} 
+
+
+.row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.row-0 {
+  background: rgb(8, 81, 11);
+  background: rgba(8, 81, 11, 0.8);
+}
+
+.row-1 {
+ 
+}
+
+.row-2 {
+
+}
+
+.row-3 {
+  background-color: #FFE98C;
+}
+
 
 footer {
   margin-top: 45px;
@@ -26,4 +136,10 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+@media (min-width: 760px) {
+  .read-play-learn p {
+    min-height: 95px;
+  }
 }
