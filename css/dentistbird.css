@@ -22,7 +22,7 @@ body{
 }
 .navbar-brand {
   height: 150px;
-  border-bottom: 2px solid rgb(8, 81, 11);
+/*  border-bottom: 2px solid rgb(8, 81, 11);*/
 }
 
 .navbar-default {
@@ -52,10 +52,6 @@ body{
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border: none;
-}
-
-.navbar-default .navbar-toggle {
   border: none;
 }
 
@@ -99,20 +95,22 @@ iframe {
   border-radius: 7px;
 }
 
-/*add media query*/
 .jumbo {
   color: #ffe;
   margin: 29px 0 0 20px;
   padding: 18px 0;
-  /*background: #91a678;*/
 }
 
-.container .jumbo {
+.container .jumbotron {
+  border-radius: 0;
+}
+
+.container .jumbo, .jumbotron .page2 {
   border-radius: 0;
   padding: 0 35px;
 }
 
-.jumbo h2 {
+.jumbo h2, .jumbotron h2 {
   color: #FFDD50;
   font-size: 1.7em;
 }
@@ -137,10 +135,14 @@ iframe {
   padding-bottom: 15px;
 }
 
-.row-0 {
+.row-0, .jumbotron {
   /*background: rgb(8, 81, 11);
   background: rgba(8, 81, 11, 0.8);*/
   background-color: #a6b089;
+}
+
+.row.row-0 {
+  padding-bottom: 25px;
 }
 
 .row-1 {
@@ -174,18 +176,16 @@ iframe {
   padding-left: 20px;
 }
 
+
 .row.row-5 {
+  background: #ccc;
   margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .row.row-5-1 {
   margin-top: 0;
-}
-
-.row.row-6 {
-  background: #ccc;
-  margin-bottom: 0;
-  padding-top: 0;
 }
 
 .row.row-6-1 {
@@ -194,12 +194,26 @@ iframe {
 }
 
 footer {
-  border-top: 1px solid #ccc;
-  padding-top: 5px;
+  border-top: 5px solid #ccc;
+  padding-top: 0px;
   padding-right: 35px;
   color: #555;
-  background: #eee;
+  background: #fff;
 }
+
+footer table {
+  font-size: 12px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+footer table td {
+  width: 33.33%;
+  height: 30px;
+  vertical-align: top;
+}
+
+
 footer a {
   color: #333;
 }
@@ -264,21 +278,63 @@ footer ul li {
 /* Extra Things */
 h3 i{color: #444;}
 
+/*read for liberia page
+*/
+
+h3.page2 {
+  max-width: 100%;
+}
+
+.page2-section {
+  margin: 40px 0;
+}
+
+.row.photo-section {
+  background: #E8E8E8;
+  padding: 20px;
+  text-align: center;
+}
+
+.photo-section img {
+  max-width: 100%;
+}
+
+.caption {
+  max-width: 600px;
+  margin: auto;
+}
+
+p.we-care-photo {
+  text-align: left;
+}
+
+.sidebar {
+  background-color: #FFE98C;
+  padding: 10px 15px;
+
+}
+
 @media (max-width: 480px) {
     .logo {
     vertical-align: bottom;
     font-size: 40px;
     color: rgb(8, 81, 11);
     padding: 10px 0;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
   }
 
   .navbar-brand {
     border-bottom: none;
+    margin-bottom: 10px;
+    max-width: 300px;
   }
 
   .navbar-collapse {
     margin-top: 20px;
+  }
+
+  .row-0 {
+    margin-top: 10px;
   }
 }
 
@@ -313,6 +369,10 @@ h3 i{color: #444;}
 
   .row {
     padding: 0 5px;
+  }
+
+  .navbar>.container-fluid .navbar-brand {
+    padding-top: 0;
   }
 }
 

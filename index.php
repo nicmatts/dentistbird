@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dentist Bird is based on How Plover Bird Came to Clean Crocodile’s Teeth">
-    
-    <title>Dentist Bird | Read.Play.Learn.</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/dentistbird.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/dentist-bird.png">
-    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Gafata' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-  </head>
-  <body>
-
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/webHeader.png"  alt="Dentist Bird logo"><!-- <span class="logo">Dentist Bird</span> --></a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="readforliberia.html">#ReadforLiberia</a></li>
-            <li><a href="index.html#read">Read.Play.Learn.</a></li>
-            <li><a href="index.html#parents">Parents and Teachers</a></li>
-            <li><a href="index.html#people">People are Saying…</a></li>
-            <li><a href="connect.html">Connect</a></li>
-            <!-- <li><a href="#credits">Credits</a></li> -->
-          </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+<?php require("header.php"); ?>
 
   <div class="row row-0">
     <div class="container">
@@ -114,10 +64,10 @@
         </div>
         <div class="col-md-4">
           <h3>For parents</h3>
-          <p>Are you ready to enter the rich world of Dentist Bird with your child? Download our free <a href="appPDFs/parentsGuide.pdf" target="_blank">Parent’s Guide</a>. It’s full of simple ideas to come together as a family around a unique story, rich art, and great music.</p></div>
+          <p>Are you ready to enter the rich world of Dentist Bird with your child? Download our free <a href="/appPDFs/parentsGuide.pdf" target="_blank">Parent’s Guide</a>. It’s full of simple ideas to come together as a family around a unique story, rich art, and great music.</p></div>
         <div class="col-md-4">
           <h3>For teachers</h3>
-          Our free <a href="appPDFs/teachersGuide.pdf" target="_blank">Teacher's Guide</a> features:
+          Our free <a href="/appDPFs/teachersGuide.pdf" target="_blank">Teacher's Guide</a> features:
           <ul>
             <li>A handy “cheat sheet” that previews interactive spots in the app</li>
             <li>Ideas for teaching reading, math, science, music, and civics with Dentist Bird</li>
@@ -194,7 +144,7 @@
     </div>
   </div>
   
-  <!-- <div class="row row-6">
+  <div class="row row-6">
     <div class="container">
       <div class="row row-6-1">
         <div class="col-md-12">
@@ -212,47 +162,16 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   
   <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
   <footer>
-    <div class="row">
-    <div class="container">
-        <!-- <div class="col-md-7">
-          <table>
-            <tr>
-              <td colspan="3">Based on How Plover Bird Came to Clean Crocodile’s Teeth</td>
-            </tr>
-                  <tr>
-                    <td>Music by Steve Sandberg</td>
-                    <td>Published by Literary Safari </td>
-                    <td>Retold by Michael Richards</td>
-
-                  </tr>
-                  <tr>
-                    <td>Illustrations by David Wolobah</td>
-                    <td>Narration by Soneela Nankani</td>
-                    <td>Website by Red River Link</td>
-                    
-
-        
-                  </tr>
-                  <tr>
-                    <td>Developed by Jason Schroeder</td>
-                    <td>Copyright <a href="http://literarysafari.com/>Literary Safari">Literary Safari</a> 2014</td>
-                  </tr>
-                </table>
-      
-              </div> -->
-              <div class="col-md-5 col-md-offset-7">
-                <ul class="pull-right">
-                  <li><a href="privacy-copyright.html">Privacy and Copyright</a>   /</li>
-                  <li><a href="connect.html">Contact</a></li>
-                  <li><a href="http://literarysafari.com/"><img src="img/LS_logo2.jpg" width=80 alt="Literary Safari logo"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <ul class="pull-right">
+      <li>Copyright Info    /</li>
+      <li>Privacy    /</li>
+      <li>Contact</li>
+      <li><a href="http://literarysafari.com/"><img src="img/LS_logo2.jpg" width=100 alt="Literary Safari logo"></a></li>
+    </ul>
   </footer>   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

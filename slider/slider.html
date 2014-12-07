@@ -1,0 +1,48 @@
+<div id="container" class="container">
+  
+      <h3>Enter the We-Care Foundation</h3>
+
+<p> We-Care is an educational non-profit organization based in Liberia. It trains teachers on strategies to improve reading and writing, publishes children’s books, and runs lending libraries in schools and economically challenged communities. To date, it has trained over 900 teachers and impacted the lives of more than 20,000 students. </p>
+
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="banner-fade">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="img/slideshow/we_care_library2.jpg" title="The We-Care Foundation publishes culturally-relevant children’s books through its Reading Liberia program."></li>
+          <li><img src="img/slideshow/we_care_library.jpg" title="It also runs a free and public lending library in the heart of Monrovia."></li>
+          <li><img src="img/slideshow/we_care_library3.jpg" title="School children come here to study, surf the web, and read books and magazines. The library has been closed to the public due to the Ebola crisis.  "></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+ 
+      </div>
+
+  </div>
+      <!-- End outer wrapper -->
+
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 480,
+            width       : 820,
+            responsive  : true
+          });
+
+        });
+      </script>
+
+       <script class="secret-source">
+        jQuery(document).ready(function($) {
+          
+          $('#banner-slide2').bjqs({
+            animtype      : 'slide',
+            height        : 320,
+            width         : 620,
+            responsive    : true,
+            randomstart   : true
+          });
+          
+        });
+      </script>
