@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dentist Bird is based on How Plover Bird Came to Clean Crocodile’s Teeth">
+    
+    <title>Dentist Bird | Contact</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dentistbird.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/dentist-bird.png">
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Gafata' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/webHeader.png"  alt="Dentist Bird logo"><!-- <span class="logo">Dentist Bird</span> --></a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="readforliberia.html">#ReadforLiberia</a></li>
+            <li><a href="index.html#read">Read.Play.Learn.</a></li>
+            <li><a href="index.html#parents">Parents and Teachers</a></li>
+            <li><a href="index.html#people">People are Saying…</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- <li><a href="#credits">Credits</a></li> -->
+          </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <div class="row row-1">
+    <div class="container">
+      <div class="col-md-12 ">
+        <h2>We would love to hear from you!</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Contact</h3>
+            <p><a href="mailto:info@dentistbird.com?subject=Feedback from website">Drop us an email anytime</a> to contact Dentist Bird Team or to let us know what you think of Dentist Bird. We take your feedback and input very seriously. 
+            
+            For support requests, please email <a href="mailto:info@dentistbird.com?Subject=Support request">info@dentistbird.com</a></p>
+          </div>
+          <div class="col-md-4">
+            <h3>Subscribe</h3>
+            <p>Dentist Bird is the first of a series of interactive folktale apps. Sign-Up for news about our next release.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Share</h3>
+            <p>Social shares go here</p>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+  
+  
+  <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+  <footer>
+    <div class="row">
+    <div class="container">
+        
+              <div class="col-md-12">
+                <ul class="pull-right">
+                  <li><a href="privacy.html">Privacy</a>   /</li>
+                  <li><a href="credits.html">Credits</a>   /</li>
+                  <li><a href="contact.html">Contact</a>   /</li>
+                  <li>Website by <a href="http://redriverlink.com">Red River Link</a>   /</li>
+                  <li>&copy 2014 <a href="http://www.literarysafari.com">Literary Safari<a>, All rights reserved.   </li>
+                  <li><a href="http://literarysafari.com/"><img src="img/LS_logo2.jpg" width=80 alt="Literary Safari logo"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  </footer>   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="js/dentistbird.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+      });
+
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+  
+  </body>
+</html>

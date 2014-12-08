@@ -1,7 +1,7 @@
 body{
   font-family: 'Gafata', sans-serif;
   font-size: 20px;
-  min-height: 800px;
+  min-height: 650px;
 }
 
 .logo {
@@ -193,6 +193,19 @@ iframe {
    margin-bottom: 0;
 }
 
+/*credits page
+*/
+
+.credits {
+  list-style: none;
+  padding-left: 0;
+}
+
+.credits li {
+  padding-bottom: 10px;
+}
+
+
 footer {
   border-top: 5px solid #ccc;
   padding-top: 0px;
@@ -326,7 +339,10 @@ p.we-care-photo {
   .navbar-brand {
     border-bottom: none;
     margin-bottom: 10px;
-    max-width: 300px;
+  }
+
+  .navbar-brand>img {
+   width: 300px;
   }
 
   .navbar-collapse {
