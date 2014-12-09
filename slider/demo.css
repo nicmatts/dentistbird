@@ -69,7 +69,8 @@ ol.bjqs-markers li a:hover{
 }
 
 p.bjqs-caption{
-	background: rgba(255,255,255,0.8);
+	/*background: rgba(255,255,255,0.8);*/
+	 background: rgba(178, 176, 176, 0.9);
 	width: 100%;
 	color: black;
 }
